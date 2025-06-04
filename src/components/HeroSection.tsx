@@ -22,28 +22,21 @@ const HeroSection = () => {
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 font-lora leading-tight">
-            Cultivate Your Passion:
-            <span className="block text-farm-green-200">Rent a Farm Plot Today</span>
+            Start Your Farming Journey:
+            <span className="block text-farm-green-200">Quality Farm Plots for Rent</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Connecting landowners with aspiring farmers for a greener tomorrow. 
-            Start your farming journey or monetize your unused land.
+            We provide well-maintained farm plots perfect for your agricultural needs. 
+            Ready to start farming? Get in touch with us today.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex justify-center">
             <Button 
               size="lg" 
-              className="bg-white text-farm-green-700 hover:bg-farm-green-50 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-200 hover:shadow-xl hover:scale-105"
+              className="bg-white text-farm-green-700 hover:bg-farm-green-50 px-12 py-4 rounded-full font-semibold text-lg transition-all duration-200 hover:shadow-xl hover:scale-105"
             >
-              Explore Available Plots
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="border-2 border-white text-white hover:bg-white hover:text-farm-green-700 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-200"
-            >
-              List Your Land
+              Contact Us
             </Button>
           </div>
         </div>
@@ -51,16 +44,16 @@ const HeroSection = () => {
         {/* Stats */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 animate-slide-up">
           <div className="text-center">
-            <div className="text-4xl font-bold text-white mb-2">500+</div>
-            <div className="text-white/80">Available Plots</div>
+            <div className="text-4xl font-bold text-white mb-2">200+</div>
+            <div className="text-white/80">Successful Rentals</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-white mb-2">1,200+</div>
-            <div className="text-white/80">Happy Farmers</div>
+            <div className="text-4xl font-bold text-white mb-2">95%</div>
+            <div className="text-white/80">Customer Satisfaction</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-white mb-2">15,000+</div>
-            <div className="text-white/80">Acres Connected</div>
+            <div className="text-4xl font-bold text-white mb-2">5,000+</div>
+            <div className="text-white/80">Acres Managed</div>
           </div>
         </div>
       </div>
