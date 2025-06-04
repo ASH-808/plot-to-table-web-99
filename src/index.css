@@ -75,6 +75,17 @@
     @apply bg-background text-foreground font-inter;
     scroll-behavior: smooth;
   }
+
+  /* Mobile-first responsive font sizes */
+  html {
+    font-size: 14px;
+  }
+
+  @media (min-width: 640px) {
+    html {
+      font-size: 16px;
+    }
+  }
 }
 
 /* Custom utility classes */
@@ -86,24 +97,52 @@
   .card-hover {
     @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
   }
+
+  /* Mobile touch targets */
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Responsive text scaling */
+  .text-responsive {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+  }
+
+  .text-responsive-lg {
+    font-size: clamp(1.125rem, 4vw, 1.5rem);
+  }
+
+  .text-responsive-xl {
+    font-size: clamp(1.5rem, 6vw, 3rem);
+  }
 }
 
-/* Optimized Animations */
+/* Enhanced Animations */
 @layer utilities {
-  @keyframes leaf-fall {
+  @keyframes grain-fall {
     0% {
       transform: translateY(-100vh) rotate(0deg);
       opacity: 0;
     }
     10% {
-      opacity: 1;
+      opacity: 0.4;
     }
     90% {
-      opacity: 1;
+      opacity: 0.4;
     }
     100% {
-      transform: translateY(100vh) rotate(360deg);
+      transform: translateY(100vh) rotate(180deg);
       opacity: 0;
+    }
+  }
+
+  @keyframes gentle-sway {
+    0%, 100% {
+      transform: translateX(0px) rotate(12deg);
+    }
+    50% {
+      transform: translateX(3px) rotate(15deg);
     }
   }
 
@@ -149,8 +188,12 @@
     }
   }
 
-  .animate-leaf-fall {
-    animation: leaf-fall linear infinite;
+  .animate-grain-fall {
+    animation: grain-fall linear infinite;
+  }
+
+  .animate-gentle-sway {
+    animation: gentle-sway 4s ease-in-out infinite;
   }
 
   .animate-fade-in {
@@ -174,5 +217,55 @@
 @layer utilities {
   .focus-visible {
     @apply outline-none ring-2 ring-green-500 ring-offset-2;
+  }
+}
+
+/* Mobile-specific optimizations */
+@media (max-width: 768px) {
+  /* Reduce animation complexity on mobile */
+  .animate-grain-fall {
+    animation-duration: 12s;
+  }
+  
+  /* Ensure proper touch targets */
+  button, a {
+    min-height: 44px;
+    touch-action: manipulation;
+  }
+  
+  /* Prevent horizontal scroll */
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .text-white\/90 {
+    @apply text-white;
+  }
+  
+  .text-white\/80 {
+    @apply text-white;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .animate-grain-fall,
+  .animate-gentle-sway,
+  .animate-fade-in,
+  .animate-slide-up,
+  .animate-scale-in,
+  .animate-float,
+  .animate-bounce,
+  .animate-pulse {
+    animation: none;
+  }
+  
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

@@ -1,22 +1,22 @@
 
 import React from 'react';
 
-const FallingLeaves = ({ count = 10 }: { count?: number }) => {
-  const leaves = Array.from({ length: count }, (_, i) => i);
+const FallingLeaves = ({ count = 6 }: { count?: number }) => {
+  const particles = Array.from({ length: count }, (_, i) => i);
 
   return (
     <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-      {leaves.map((leaf) => (
+      {particles.map((particle) => (
         <div
-          key={leaf}
-          className="absolute animate-leaf-fall opacity-70"
+          key={particle}
+          className="absolute animate-grain-fall opacity-40"
           style={{
             left: `${Math.random() * 100}%`,
-            animationDuration: `${3 + Math.random() * 4}s`,
-            animationDelay: `${Math.random() * 5}s`,
+            animationDuration: `${8 + Math.random() * 6}s`,
+            animationDelay: `${Math.random() * 8}s`,
           }}
         >
-          <div className="w-3 h-3 bg-farm-green-400 rounded-full transform rotate-45 shadow-sm"></div>
+          <div className="w-2 h-3 bg-gradient-to-b from-amber-300 to-amber-500 rounded-full transform rotate-12 shadow-sm animate-gentle-sway"></div>
         </div>
       ))}
     </div>

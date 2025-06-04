@@ -44,35 +44,35 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-8">
           {/* Brand Section */}
-          <div className="lg:col-span-2">
-            <div className="flex items-center space-x-2 mb-6">
+          <div className="sm:col-span-2 lg:col-span-2">
+            <div className="flex items-center space-x-3 mb-6">
               <img 
                 src="/lovable-uploads/0aa15831-9bee-448a-af51-d5f4b5c9f447.png" 
                 alt="Farm My Plot Logo" 
-                className="h-10 w-auto object-contain"
+                className="h-10 sm:h-12 w-auto object-contain flex-shrink-0"
               />
-              <div>
-                <h1 className="text-xl font-bold text-white font-lora">Farm My Plot</h1>
+              <div className="min-w-0">
+                <h1 className="text-xl sm:text-2xl font-bold text-white font-lora">Farm My Plot</h1>
                 <p className="text-sm text-gray-300 -mt-1">Your Investment. Our Expertise. Earth's Future</p>
               </div>
             </div>
             
-            <p className="text-gray-300 mb-6 leading-relaxed">
+            <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">
               Connecting landowners with aspiring farmers to create sustainable agricultural communities. 
               Start your farming journey or maximize your land's potential today.
             </p>
             
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-farm-green-600 rounded-full flex items-center justify-center hover:bg-farm-green-700 transition-colors">
+              <a href="#" className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-700 transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-farm-green-600 rounded-full flex items-center justify-center hover:bg-farm-green-700 transition-colors">
+              <a href="#" className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-700 transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-farm-green-600 rounded-full flex items-center justify-center hover:bg-farm-green-700 transition-colors">
+              <a href="#" className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-700 transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
             </div>
@@ -81,7 +81,7 @@ const Footer = () => {
           {/* Footer Links */}
           {footerSections.map((section, index) => (
             <div key={index} className="lg:col-span-1">
-              <h3 className="text-lg font-semibold mb-4 text-farm-green-400">
+              <h3 className="text-lg font-semibold mb-4 text-green-400">
                 {section.title}
               </h3>
               <ul className="space-y-2">
@@ -89,7 +89,7 @@ const Footer = () => {
                   <li key={linkIndex}>
                     <a
                       href={link.href}
-                      className="text-gray-300 hover:text-farm-green-400 transition-colors duration-200"
+                      className="text-gray-300 hover:text-green-400 transition-colors duration-200 text-sm sm:text-base"
                     >
                       {link.label}
                     </a>
@@ -102,37 +102,37 @@ const Footer = () => {
 
         {/* Contact Info */}
         <div className="border-t border-gray-800 mt-12 pt-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             <div className="flex items-center space-x-3">
-              <Mail className="w-5 h-5 text-farm-green-500" />
-              <div>
+              <Mail className="w-5 h-5 text-green-500 flex-shrink-0" />
+              <div className="min-w-0">
                 <p className="text-sm text-gray-400">Email Us</p>
-                <p className="text-white">hello@farmmyplot.com</p>
+                <p className="text-white text-sm sm:text-base truncate">hello@farmmyplot.com</p>
               </div>
             </div>
             
             <div className="flex items-center space-x-3">
-              <Phone className="w-5 h-5 text-farm-green-500" />
-              <div>
+              <Phone className="w-5 h-5 text-green-500 flex-shrink-0" />
+              <div className="min-w-0">
                 <p className="text-sm text-gray-400">Call Us</p>
-                <p className="text-white">+1 (555) 123-FARM</p>
+                <p className="text-white text-sm sm:text-base">+1 (555) 123-FARM</p>
               </div>
             </div>
             
             <div className="flex items-center space-x-3">
-              <MapPin className="w-5 h-5 text-farm-green-500" />
-              <div>
+              <MapPin className="w-5 h-5 text-green-500 flex-shrink-0" />
+              <div className="min-w-0">
                 <p className="text-sm text-gray-400">Visit Us</p>
-                <p className="text-white">San Francisco, CA</p>
+                <p className="text-white text-sm sm:text-base">San Francisco, CA</p>
               </div>
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row justify-between items-center border-t border-gray-800 pt-8">
-            <p className="text-gray-400 text-sm">
+          <div className="flex flex-col sm:flex-row justify-between items-center border-t border-gray-800 pt-8 space-y-4 sm:space-y-0">
+            <p className="text-gray-400 text-sm text-center sm:text-left">
               © 2024 Farm My Plot. All rights reserved.
             </p>
-            <p className="text-gray-400 text-sm mt-4 md:mt-0">
+            <p className="text-gray-400 text-sm text-center sm:text-right">
               Built with ❤️ for sustainable agriculture
             </p>
           </div>
