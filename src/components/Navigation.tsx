@@ -29,12 +29,14 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">F</span>
-            </div>
+            <img 
+              src="/lovable-uploads/0aa15831-9bee-448a-af51-d5f4b5c9f447.png" 
+              alt="Farm My Plot Logo" 
+              className="h-12 w-auto object-contain"
+            />
             <div>
               <h1 className="text-xl font-bold text-green-800 font-lora animate-fade-in">Farm My Plot</h1>
-              <p className="text-xs text-green-600 -mt-1 animate-slide-up">Cultivate Your Dreams</p>
+              <p className="text-xs text-green-600 -mt-1 animate-slide-up">Your Investment. Our Expertise. Earth's Future</p>
             </div>
           </div>
 

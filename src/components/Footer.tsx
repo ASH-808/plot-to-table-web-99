@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Sprout, Facebook, Twitter, Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   const footerSections = [
@@ -49,12 +49,14 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-br from-farm-green-500 to-farm-green-600 rounded-lg flex items-center justify-center">
-                <Sprout className="w-6 h-6 text-white" />
-              </div>
+              <img 
+                src="/lovable-uploads/0aa15831-9bee-448a-af51-d5f4b5c9f447.png" 
+                alt="Farm My Plot Logo" 
+                className="h-10 w-auto object-contain"
+              />
               <div>
                 <h1 className="text-xl font-bold text-white font-lora">Farm My Plot</h1>
-                <p className="text-sm text-gray-300 -mt-1">Cultivate Your Dreams</p>
+                <p className="text-sm text-gray-300 -mt-1">Your Investment. Our Expertise. Earth's Future</p>
               </div>
             </div>
             
