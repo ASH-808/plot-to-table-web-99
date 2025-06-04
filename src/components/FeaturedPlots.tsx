@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { MapPin, Leaf, Sun } from 'lucide-react';
@@ -59,34 +58,26 @@ const FeaturedPlots = () => {
           </p>
         </div>
 
-        {/* Curved Scrolling Ticker */}
-        <div className="relative overflow-hidden mb-12 curved-ticker-container">
-          <div className="flex animate-scroll-right-to-left curved-ticker-track">
+        {/* Simple Scrolling Ticker */}
+        <div className="relative overflow-hidden mb-12">
+          <div className="flex animate-scroll-right-to-left">
             {/* First set of images */}
-            {farmingImages.map((image, index) => (
-              <div key={`first-${image.id}`} className="flex-shrink-0 mx-4 curved-image-wrapper">
+            {farmingImages.map((image) => (
+              <div key={`first-${image.id}`} className="flex-shrink-0 mx-4">
                 <img 
                   src={image.src} 
                   alt={image.alt} 
-                  className="h-64 w-80 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 object-cover curved-image" 
-                  style={{
-                    transform: `rotateY(${(index - 5) * 8}deg) rotateX(5deg)`,
-                    transformOrigin: 'center center'
-                  }}
+                  className="h-64 w-80 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 object-cover hover:scale-105" 
                 />
               </div>
             ))}
             {/* Duplicate set for seamless loop */}
-            {farmingImages.map((image, index) => (
-              <div key={`second-${image.id}`} className="flex-shrink-0 mx-4 curved-image-wrapper">
+            {farmingImages.map((image) => (
+              <div key={`second-${image.id}`} className="flex-shrink-0 mx-4">
                 <img 
                   src={image.src} 
                   alt={image.alt} 
-                  className="h-64 w-80 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 curved-image" 
-                  style={{
-                    transform: `rotateY(${(index - 5) * 8}deg) rotateX(5deg)`,
-                    transformOrigin: 'center center'
-                  }}
+                  className="h-64 w-80 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 hover:scale-105" 
                 />
               </div>
             ))}
