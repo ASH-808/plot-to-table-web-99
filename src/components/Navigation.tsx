@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Menu, X, Sprout } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -8,8 +7,6 @@ const Navigation = () => {
 
   const navItems = [
     { label: 'Home', href: '#home' },
-    { label: 'Available Plots', href: '#plots' },
-    { label: 'List Your Land', href: '#list-land' },
     { label: 'Success Stories', href: '#stories' },
     { label: 'Contact', href: '#contact' },
   ];

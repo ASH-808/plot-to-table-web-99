@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
@@ -22,13 +21,11 @@ const HeroSection = () => {
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 font-lora leading-tight">
-            Start Your Farming Journey:
-            <span className="block text-farm-green-200">Quality Farm Plots for Rent</span>
+            Farm My Plot
           </h1>
           
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            We provide well-maintained farm plots perfect for your agricultural needs. 
-            Ready to start farming? Get in touch with us today.
+            Your Investment, Our Expertise, Earth's Future
           </p>
           
           <div className="flex justify-center">
