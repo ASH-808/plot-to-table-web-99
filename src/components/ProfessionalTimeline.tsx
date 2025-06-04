@@ -20,7 +20,7 @@ const ProfessionalTimeline = () => {
       description: 'Schedule guided tours with certified agricultural experts who provide comprehensive assessments of soil quality, water sources, and growing conditions specific to your chosen plot in Mandya.',
       timeframe: '1 week',
       benefits: ['Professional soil testing', 'Water quality analysis', 'Climate assessment', 'Crop suitability advice'],
-      image: 'https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+      image: '/lovable-uploads/55b3ce75-dc57-47cc-83d0-169bb4885015.png'
     },
     {
       id: 3,
@@ -47,7 +47,7 @@ const ProfessionalTimeline = () => {
       description: 'Become part of Karnataka\'s thriving agricultural network. Access peer support, knowledge sharing, and collaborative opportunities with fellow farmers in Mandya region.',
       timeframe: 'Immediate',
       benefits: ['Farmer networking events', 'Knowledge sharing forums', 'Collaborative opportunities', 'Peer mentorship'],
-      image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+      image: '/lovable-uploads/089c59b2-0f06-42f8-8077-f33fb96c766a.png'
     },
     {
       id: 6,
