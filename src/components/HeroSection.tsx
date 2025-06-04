@@ -51,9 +51,7 @@ const HeroSection = () => {
           </p>
           
           <div className="flex justify-center animate-scale-in px-4">
-            <Button size="lg" className="bg-white text-green-700 hover:bg-green-50 px-8 sm:px-12 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg transition-all duration-300 hover:shadow-2xl hover:scale-110 transform w-full sm:w-auto max-w-sm">
-              Start Farming in Mandya
-            </Button>
+            <Button size="lg" className="bg-white text-green-700 hover:bg-green-50 px-8 sm:px-12 py-3 sm:py-4 rounded-full text-base sm:text-lg transition-all duration-300 hover:shadow-2xl hover:scale-110 transform w-full sm:w-auto max-w-sm font-medium">Start Your Farming -&gt;</Button>
           </div>
         </div>
         
