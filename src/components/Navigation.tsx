@@ -39,11 +39,8 @@ const Navigation = () => {
             <img alt="Farm My Plot Logo" className="h-10 sm:h-12 w-auto object-contain flex-shrink-0" src="/lovable-uploads/a8b0c51c-f926-4dbb-999b-df4bd446c23f.png" />
             <div className="min-w-0">
               <h1 className="text-lg sm:text-xl font-bold text-green-800 font-lora animate-fade-in truncate">
-                Farm My Plot
-              </h1>
-              <p className="text-xs text-green-600 -mt-1 animate-slide-up hidden sm:block">
-                Your Investment. Our Expertise. Earth's Future
-              </p>
+            </h1>
+              
             </div>
           </div>
 
