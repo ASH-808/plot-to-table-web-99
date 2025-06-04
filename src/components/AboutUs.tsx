@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import VideoPlayer from './VideoPlayer';
 
 const AboutUs = () => {
   return (
@@ -37,18 +38,10 @@ const AboutUs = () => {
           {/* Right Video */}
           <div className="relative">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
-              <video
-                className="w-full h-auto object-cover"
-                autoPlay
-                muted
-                loop
-                playsInline
-                controls
-              >
-                <source src="https://videos.pexels.com/video-files/2169880/2169880-uhd_2560_1440_25fps.mp4" type="video/mp4" />
-                <source src="https://videos.pexels.com/video-files/2169880/2169880-hd_1920_1080_25fps.mp4" type="video/mp4" />
-                Your browser does not support the video tag. Please consider upgrading your browser.
-              </video>
+              <VideoPlayer 
+                poster="https://images.unsplash.com/photo-1500595046743-cd271d694d30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80"
+                className="w-full"
+              />
             </div>
           </div>
         </div>
