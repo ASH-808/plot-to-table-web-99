@@ -8,7 +8,7 @@ const ProfessionalTimeline = () => {
       id: 1,
       icon: Search,
       title: 'Discover Your Perfect Plot',
-      description: 'Browse through our curated selection of fertile agricultural plots in Mandaya District, Karnataka. Use advanced filters to find your ideal farming location based on soil quality, water availability, and accessibility.',
+      description: 'Browse through our curated selection of fertile agricultural plots in Mandya District, Karnataka. Use advanced filters to find your ideal farming location based on soil quality, water availability, and accessibility.',
       timeframe: '1-3 days',
       benefits: ['Advanced search filters', 'Detailed soil reports', 'Virtual plot tours', 'Location analytics'],
       image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
@@ -17,7 +17,7 @@ const ProfessionalTimeline = () => {
       id: 2,
       icon: Users,
       title: 'Expert Site Inspection',
-      description: 'Schedule guided tours with certified agricultural experts who provide comprehensive assessments of soil quality, water sources, and growing conditions specific to your chosen plot.',
+      description: 'Schedule guided tours with certified agricultural experts who provide comprehensive assessments of soil quality, water sources, and growing conditions specific to your chosen plot in Mandya.',
       timeframe: '1 week',
       benefits: ['Professional soil testing', 'Water quality analysis', 'Climate assessment', 'Crop suitability advice'],
       image: 'https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
@@ -26,16 +26,16 @@ const ProfessionalTimeline = () => {
       id: 3,
       icon: FileCheck,
       title: 'Secure Documentation',
-      description: 'Complete transparent rental agreements with farmer-friendly terms. All legal documentation is digitally processed for quick approval and peace of mind.',
+      description: 'Complete transparent rental agreements with farmer-friendly terms. All legal documentation follows Karnataka state regulations and is digitally processed for quick approval.',
       timeframe: '3-5 days',
-      benefits: ['Transparent pricing', 'Flexible lease terms', 'Digital contracts', 'Legal compliance'],
+      benefits: ['Transparent pricing in ₹', 'Flexible lease terms', 'Digital contracts', 'Legal compliance'],
       image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
     {
       id: 4,
       icon: Sprout,
       title: 'Begin Cultivation',
-      description: 'Start your agricultural journey with comprehensive support including farming guides, equipment access, and expert consultation throughout your growing cycle.',
+      description: 'Start your agricultural journey with comprehensive support including farming guides, equipment access, and expert consultation throughout your growing cycle in Karnataka climate.',
       timeframe: 'Ongoing',
       benefits: ['24/7 expert support', 'Equipment rental access', 'Seasonal planning guides', 'Resource optimization'],
       image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
@@ -44,7 +44,7 @@ const ProfessionalTimeline = () => {
       id: 5,
       icon: HeartHandshake,
       title: 'Join Farming Community',
-      description: 'Become part of Karnataka\'s thriving agricultural network. Access peer support, knowledge sharing, and collaborative opportunities with fellow farmers.',
+      description: 'Become part of Karnataka\'s thriving agricultural network. Access peer support, knowledge sharing, and collaborative opportunities with fellow farmers in Mandya region.',
       timeframe: 'Immediate',
       benefits: ['Farmer networking events', 'Knowledge sharing forums', 'Collaborative opportunities', 'Peer mentorship'],
       image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
@@ -53,7 +53,7 @@ const ProfessionalTimeline = () => {
       id: 6,
       icon: TrendingUp,
       title: 'Achieve Success',
-      description: 'Monitor your progress with data-driven insights, optimize yields, and scale your operations. Access market guidance and growth planning support.',
+      description: 'Monitor your progress with data-driven insights, optimize yields, and scale your operations. Access market guidance and growth planning support tailored for Karnataka agriculture.',
       timeframe: '6+ months',
       benefits: ['Yield optimization', 'Market price guidance', 'Growth planning', 'Performance analytics'],
       image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
@@ -113,8 +113,9 @@ const ProfessionalTimeline = () => {
               <div className="relative overflow-hidden rounded-xl shadow-lg">
                 <img 
                   src={step.image} 
-                  alt={step.title}
+                  alt={`${step.title} - Agricultural farming in Karnataka`}
                   className="w-full h-64 lg:h-80 object-cover transform hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>

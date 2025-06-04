@@ -5,7 +5,7 @@ import ProfessionalTimeline from './ProfessionalTimeline';
 
 const HowItWorks = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-green-50">
+    <section id="how-it-works" className="py-20 bg-gradient-to-b from-white to-green-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="text-center mb-20">
@@ -13,7 +13,7 @@ const HowItWorks = () => {
             How <span className="text-gradient">Farm My Plot</span> Works
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto mb-8 animate-fade-in leading-relaxed" style={{ animationDelay: '0.2s' }}>
-            Your journey from plot discovery to farming success in Mandaya District, Karnataka. 
+            Your journey from plot discovery to farming success in Mandya District, Karnataka. 
             Follow our proven 6-step process designed for modern agricultural entrepreneurs.
           </p>
           
@@ -25,7 +25,7 @@ const HowItWorks = () => {
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-green-600 mb-2">250+</div>
-              <div className="text-gray-600">Available Plots in Mandaya</div>
+              <div className="text-gray-600">Available Plots in Mandya</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-green-600 mb-2">95%</div>
@@ -43,10 +43,10 @@ const HowItWorks = () => {
         <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 animate-fade-in" style={{ animationDelay: '0.8s' }}>
           <div className="text-center mb-10">
             <h3 className="text-3xl font-bold text-gray-900 mb-4 font-lora">
-              Proven Results in Mandaya District
+              Proven Results in Mandya District
             </h3>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Join thousands of successful farmers who have transformed their agricultural dreams into profitable realities
+              Join thousands of successful farmers who have transformed their agricultural dreams into profitable realities across Karnataka
             </p>
           </div>
           
@@ -67,7 +67,7 @@ const HowItWorks = () => {
           
           <div className="text-center">
             <Button className="bg-green-600 hover:bg-green-700 text-white px-10 py-4 rounded-full font-semibold text-lg hover:scale-105 transition-all duration-300 shadow-lg">
-              Start Your Farming Journey Today
+              Start Your Farming Journey in Karnataka
             </Button>
           </div>
         </div>
