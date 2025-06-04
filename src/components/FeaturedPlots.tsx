@@ -1,64 +1,49 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { MapPin, Leaf, Sun } from 'lucide-react';
-
 const FeaturedPlots = () => {
-  const farmingImages = [
-    {
-      id: 1,
-      src: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      alt: 'Rice paddies'
-    },
-    {
-      id: 2,
-      src: 'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      alt: 'Agricultural field'
-    },
-    {
-      id: 3,
-      src: 'https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      alt: 'Crop cultivation'
-    },
-    {
-      id: 4,
-      src: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      alt: 'Farmland landscape'
-    },
-    {
-      id: 5,
-      src: 'https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      alt: 'Coconut plantation'
-    },
-    {
-      id: 6,
-      src: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      alt: 'Wheat field'
-    },
-    {
-      id: 7,
-      src: 'https://images.unsplash.com/photo-1493962853295-0fd70327578a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      alt: 'Agricultural landscape'
-    },
-    {
-      id: 8,
-      src: 'https://images.unsplash.com/photo-1465379944081-7f47de8d74ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      alt: 'Farming scene'
-    },
-    {
-      id: 9,
-      src: 'https://images.unsplash.com/photo-1466721591366-2d5fba72006d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      alt: 'Rural farming'
-    },
-    {
-      id: 10,
-      src: 'https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      alt: 'Mountain agriculture'
-    }
-  ];
-
-  return (
-    <section id="plots" className="py-20 bg-gradient-to-b from-white to-green-50">
+  const farmingImages = [{
+    id: 1,
+    src: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    alt: 'Rice paddies'
+  }, {
+    id: 2,
+    src: 'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    alt: 'Agricultural field'
+  }, {
+    id: 3,
+    src: 'https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    alt: 'Crop cultivation'
+  }, {
+    id: 4,
+    src: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    alt: 'Farmland landscape'
+  }, {
+    id: 5,
+    src: 'https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    alt: 'Coconut plantation'
+  }, {
+    id: 6,
+    src: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    alt: 'Wheat field'
+  }, {
+    id: 7,
+    src: 'https://images.unsplash.com/photo-1493962853295-0fd70327578a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    alt: 'Agricultural landscape'
+  }, {
+    id: 8,
+    src: 'https://images.unsplash.com/photo-1465379944081-7f47de8d74ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    alt: 'Farming scene'
+  }, {
+    id: 9,
+    src: 'https://images.unsplash.com/photo-1466721591366-2d5fba72006d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    alt: 'Rural farming'
+  }, {
+    id: 10,
+    src: 'https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    alt: 'Mountain agriculture'
+  }];
+  return <section id="plots" className="py-20 bg-gradient-to-b from-white to-green-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-lora animate-fade-in">
@@ -74,31 +59,13 @@ const FeaturedPlots = () => {
         <div className="relative overflow-hidden mb-12">
           <div className="flex animate-scroll-right-to-left">
             {/* First set of images */}
-            {farmingImages.map((image) => (
-              <div
-                key={`first-${image.id}`}
-                className="flex-shrink-0 mx-4"
-              >
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="h-64 w-80 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
-                />
-              </div>
-            ))}
+            {farmingImages.map(image => <div key={`first-${image.id}`} className="flex-shrink-0 mx-4">
+                <img src={image.src} alt={image.alt} className="h-64 w-80 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 object-scale-down" />
+              </div>)}
             {/* Duplicate set for seamless loop */}
-            {farmingImages.map((image) => (
-              <div
-                key={`second-${image.id}`}
-                className="flex-shrink-0 mx-4"
-              >
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="h-64 w-80 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
-                />
-              </div>
-            ))}
+            {farmingImages.map(image => <div key={`second-${image.id}`} className="flex-shrink-0 mx-4">
+                <img src={image.src} alt={image.alt} className="h-64 w-80 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
+              </div>)}
           </div>
         </div>
 
@@ -136,8 +103,6 @@ const FeaturedPlots = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default FeaturedPlots;
