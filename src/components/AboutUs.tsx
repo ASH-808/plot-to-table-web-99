@@ -34,14 +34,21 @@ const AboutUs = () => {
             </div>
           </div>
           
-          {/* Right Image */}
+          {/* Right Video */}
           <div className="relative">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
-              <img
-                src="/lovable-uploads/645a415e-9515-4d1a-b258-b8dc378ede53.png"
-                alt="Fresh leafy vegetables representing sustainable agriculture"
+              <video
                 className="w-full h-auto object-cover"
-              />
+                autoPlay
+                muted
+                loop
+                playsInline
+                controls
+              >
+                <source src="https://videos.pexels.com/video-files/2169880/2169880-uhd_2560_1440_25fps.mp4" type="video/mp4" />
+                <source src="https://videos.pexels.com/video-files/2169880/2169880-hd_1920_1080_25fps.mp4" type="video/mp4" />
+                Your browser does not support the video tag. Please consider upgrading your browser.
+              </video>
             </div>
           </div>
         </div>
