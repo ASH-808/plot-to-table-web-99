@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -114,6 +115,32 @@
 
   .text-responsive-xl {
     font-size: clamp(1.5rem, 6vw, 3rem);
+  }
+
+  /* Curved Ticker Styles */
+  .curved-ticker-container {
+    perspective: 1200px;
+    transform-style: preserve-3d;
+  }
+
+  .curved-ticker-track {
+    transform-style: preserve-3d;
+    transform: rotateX(15deg);
+  }
+
+  .curved-image-wrapper {
+    transform-style: preserve-3d;
+  }
+
+  .curved-image {
+    transition: all 0.3s ease;
+    backface-visibility: hidden;
+    will-change: transform;
+  }
+
+  .curved-image:hover {
+    transform: rotateY(0deg) rotateX(0deg) scale(1.05) !important;
+    z-index: 10;
   }
 }
 
@@ -249,6 +276,19 @@
   body {
     overflow-x: hidden;
   }
+
+  /* Reduce curve effect on mobile for better performance */
+  .curved-ticker-container {
+    perspective: 800px;
+  }
+
+  .curved-ticker-track {
+    transform: rotateX(10deg);
+  }
+
+  .curved-image {
+    transform: rotateY(0deg) rotateX(2deg) !important;
+  }
 }
 
 /* High contrast mode support */
@@ -273,6 +313,14 @@
   .animate-bounce,
   .animate-pulse {
     animation: none;
+  }
+  
+  .curved-image {
+    transform: none !important;
+  }
+
+  .curved-ticker-track {
+    transform: none;
   }
   
   * {

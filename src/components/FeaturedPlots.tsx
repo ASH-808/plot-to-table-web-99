@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { MapPin, Leaf, Sun } from 'lucide-react';
+
 const FeaturedPlots = () => {
   const farmingImages = [{
     id: 1,
@@ -43,7 +45,9 @@ const FeaturedPlots = () => {
     src: 'https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
     alt: 'Mountain agriculture'
   }];
-  return <section id="plots" className="py-20 bg-gradient-to-b from-white to-green-50">
+
+  return (
+    <section id="plots" className="py-20 bg-gradient-to-b from-white to-green-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-lora animate-fade-in">
@@ -55,17 +59,37 @@ const FeaturedPlots = () => {
           </p>
         </div>
 
-        {/* Scrolling Ticker */}
-        <div className="relative overflow-hidden mb-12">
-          <div className="flex animate-scroll-right-to-left">
+        {/* Curved Scrolling Ticker */}
+        <div className="relative overflow-hidden mb-12 curved-ticker-container">
+          <div className="flex animate-scroll-right-to-left curved-ticker-track">
             {/* First set of images */}
-            {farmingImages.map(image => <div key={`first-${image.id}`} className="flex-shrink-0 mx-4">
-                <img src={image.src} alt={image.alt} className="h-64 w-80 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 object-scale-down" />
-              </div>)}
+            {farmingImages.map((image, index) => (
+              <div key={`first-${image.id}`} className="flex-shrink-0 mx-4 curved-image-wrapper">
+                <img 
+                  src={image.src} 
+                  alt={image.alt} 
+                  className="h-64 w-80 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 object-cover curved-image" 
+                  style={{
+                    transform: `rotateY(${(index - 5) * 8}deg) rotateX(5deg)`,
+                    transformOrigin: 'center center'
+                  }}
+                />
+              </div>
+            ))}
             {/* Duplicate set for seamless loop */}
-            {farmingImages.map(image => <div key={`second-${image.id}`} className="flex-shrink-0 mx-4">
-                <img src={image.src} alt={image.alt} className="h-64 w-80 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
-              </div>)}
+            {farmingImages.map((image, index) => (
+              <div key={`second-${image.id}`} className="flex-shrink-0 mx-4 curved-image-wrapper">
+                <img 
+                  src={image.src} 
+                  alt={image.alt} 
+                  className="h-64 w-80 object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 curved-image" 
+                  style={{
+                    transform: `rotateY(${(index - 5) * 8}deg) rotateX(5deg)`,
+                    transformOrigin: 'center center'
+                  }}
+                />
+              </div>
+            ))}
           </div>
         </div>
 
@@ -103,6 +127,8 @@ const FeaturedPlots = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default FeaturedPlots;
