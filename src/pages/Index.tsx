@@ -3,8 +3,10 @@ import React from 'react';
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
 import AboutUs from '@/components/AboutUs';
+import ProblemSolution from '@/components/ProblemSolution';
 import HowItWorks from '@/components/HowItWorks';
 import FeaturedPlots from '@/components/FeaturedPlots';
+import Testimonials from '@/components/Testimonials';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -14,8 +16,10 @@ const Index = () => {
       <main>
         <HeroSection />
         <AboutUs />
+        <ProblemSolution />
         <HowItWorks />
         <FeaturedPlots />
+        <Testimonials />
       </main>
       <Footer />
     </div>
